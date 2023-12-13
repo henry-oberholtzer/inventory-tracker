@@ -1,7 +1,7 @@
-import { inventoryItem } from "../Types";
+import { InventoryItem, Inventory } from "../Types";
 import { v4 } from "uuid";
 
-export const emptyItem: inventoryItem = {
+export const emptyItem: InventoryItem = {
 	artist: "",
 	title: "",
 	recordLabel: "",
@@ -18,8 +18,8 @@ export const emptyItem: inventoryItem = {
 	toDelete: false,
 };
 
-export const savedInventory: inventoryItem[] = [
-	{
+export const savedInventory: Inventory = {
+	a001: {
 		artist: "Freaky Chakra",
 		title: "Halucifuge",
 		recordLabel: "Exist Dance",
@@ -37,7 +37,7 @@ export const savedInventory: inventoryItem[] = [
 		key: v4(),
 		toDelete: false,
 	},
-	{
+	a001: {
 		artist: "Audio Pancake",
 		title: "Meltdown To The Millenium / El Lado B Ataka Denveto",
 		recordLabel: "Smitten",
@@ -54,7 +54,7 @@ export const savedInventory: inventoryItem[] = [
 		key: v4(),
 		toDelete: false,
 	},
-	{
+	a002: {
 		artist: "Ticon",
 		title: "Tekk, No / Ass-Tronaut",
 		recordLabel: "TIP.World",
@@ -71,7 +71,7 @@ export const savedInventory: inventoryItem[] = [
 		key: v4(),
 		toDelete: false,
 	},
-	{
+	a003: {
 		artist: "Blue Planet Corporation",
 		title: "Micromega Remix EP",
 		recordLabel: "Flying Rhino Records",
@@ -89,7 +89,7 @@ export const savedInventory: inventoryItem[] = [
 		key: v4(),
 		toDelete: false,
 	},
-	{
+	a004: {
 		artist: "Darshan",
 		title: "Mind Merge /Ephemeral",
 		recordLabel: "Flying Rhino Records",
@@ -106,7 +106,7 @@ export const savedInventory: inventoryItem[] = [
 		key: v4(),
 		toDelete: false,
 	},
-	{
+	a005: {
 		artist: "Unconscious Collective",
 		title: "Flourostan E.P.",
 		recordLabel: "Flying Rhino Records",
@@ -123,7 +123,7 @@ export const savedInventory: inventoryItem[] = [
 		key: v4(),
 		toDelete: false,
 	},
-	{
+	a006: {
 		artist: "Various",
 		title: "Birthday Bonanza E.P.",
 		recordLabel: "Flying Rhino Records",
@@ -141,7 +141,7 @@ export const savedInventory: inventoryItem[] = [
 		key: v4(),
 		toDelete: false,
 	},
-	{
+	a007: {
 		artist: "ManMadeMan",
 		title: "Desire EP",
 		recordLabel: "Flying Rhino Records",
@@ -158,7 +158,7 @@ export const savedInventory: inventoryItem[] = [
 		key: v4(),
 		toDelete: false,
 	},
-	{
+	a008: {
 		artist: "Slinky Wizard",
 		title: "Jammy Mutants EP",
 		recordLabel: "Flying Rhino Records",
@@ -176,7 +176,7 @@ export const savedInventory: inventoryItem[] = [
 		key: v4(),
 		toDelete: false,
 	},
-	{
+	a009: {
 		artist: "4D",
 		title: "Active EP",
 		recordLabel: "Flying Rhino Records",
@@ -193,6 +193,4 @@ export const savedInventory: inventoryItem[] = [
 		key: v4(),
 		toDelete: false,
 	},
-];
-
-export default savedInventory;
+};

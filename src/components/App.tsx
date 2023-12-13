@@ -4,6 +4,8 @@ import InventoryItemDetails from "./InventoryItemDetails";
 import InventoryForm from "./InventoryForm";
 import usePageView from "./hooks/usePageView";
 import useInventory from "./hooks/useInventory";
+import { useDispatch, useSelector } from "react-redux";
+import { getInventory } from "../redux/effects/Inventory";
 
 const App = () => {
 	const { pageView, setPageView, viewItem, setViewItem } = usePageView();
